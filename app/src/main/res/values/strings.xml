@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JustCleanAssessment</string>
+    <string name="favorites_fragment">favorites fragment</string>
+    <string name="id">Id</string>
+    <string name="postid">Post Id</string>
+    <string name="userid">User Id</string>
+    <string name="title">Title</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="body">Body</string>
+    <string name="addtofavorites">Add To Favorites</string>
+</resources>

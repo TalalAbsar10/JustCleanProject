@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="testapp.justcleanassessment.views.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_users_list_to_user_details"
+            app:destination="@id/user_details">
+            <argument
+                android:name="id"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/users_list"
+        android:name="testapp.justcleanassessment.views.posts.PostsFragment"
+        tools:layout="@layout/fragment_posts_list">
+        <action
+            android:id="@+id/action_users_list_to_user_details"
+            app:destination="@id/user_details">
+            <argument
+                android:name="id"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_details"
+        android:name="testapp.justcleanassessment.views.comments.CommentsFragment"
+        tools:layout="@layout/fragment_comments_list">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>
+
